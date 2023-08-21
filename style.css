@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+#titel {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, yellow 0%, rgb(234, 190, 123) 25%, rgb(162, 243, 0) 51%, #f3cc07 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#titel h1{
+    font-family:"Sacramento", cursive;
+    font-size: 5rem;
+}
+
+#titel h2{
+    font-size: 2rem;
+    font-weight: normal;
+}
+#titel img{
+    height: '100px';
+    border-radius: 15px;
+    margin-top: 40px;
+}
+#profile{
+    display: flex;
+    justify-content: center;
+    height: 540px;
+    align-items: center;
+    width: auto;
+
+    flex-direction: column;
+}
+#profile img{
+    height: 300px;
+    border-radius: 50%;
+}
+#profile h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.7rem;
+    letter-spacing: 6px;
+}
+#profile p{
+    background-color: blanchedalmond;
+    color: black;
+    padding: 3px 30px;
+    border-radius: 10px;
+}
+#skills{
+    display: flex;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(228, 242, 254); */
+}
+#skills h1{
+    font-size: 3rem;
+    color: rgb(0, 193, 193);
+}
+.parent{
+    display: grid;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 70%;
+    margin-top: 50px;
+    /* background-color: aqua; */
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.parent h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    color: rgb(0, 178, 178);
+}
+.parent p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+.typing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.mathematics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typing img{
+    height:150px;
+    
+}
+.mathematics img{
+    height: 150px
+}
+@media (max-width:600px){
+    #titel img{
+        height: 170px;
+        /* width: 40px; */
+        
+    }
+    .parent{
+        width: 100%;
+        display: block;
+        text-align: justify;
+        
+    }
+    .parent img{
+        display: inline;
+        height: 100px;
+        border-radius: 50%;
+    }
+    #skills{
+        margin: 10px 20px;
+        
+    }
+    #titel{
+        display: inline-block;
+        text-align: center;
+    }
+    #profile{
+        margin-top: 40px;
+        
+    }
+    #profile p{
+        margin: 20px 20px;
+    }
+    #profile h2{
+        margin-top: 50px;
+    }
+    
+    #titel h1{
+        margin: 30px 20px;
+        
+    }
+    #titel h2{
+        margin: 30px 20px;
+    }
+    #footer .link{
+        
+        gap: 40px;
+    }
+
+}
+    
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin-bottom:30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#contact h2{
+    font-weight: lighter;
+    font-size: 2.3rem;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#contact h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 20px 20px;
+}
+#contact button{
+    width: 230px;
+    height: 47px;
+    padding: 5px 10px;
+    background-color: rgb(73, 255, 237);
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    transition: .2s ease-in;
+}
+#contact button:hover{
+    background: linear-gradient(yellow, orange,rgb(235, 46, 77),purple, rgb(98, 98, 233));
+    padding: 2px;
+    color: white;
+    transition: .2s ease-out;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: auto;
+    align-items: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, yellow 0%, rgb(234, 190, 123) 25%, rgb(162, 243, 0) 51%, #f3cc07 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+
+    flex-direction: column;
+    gap: 30px;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
